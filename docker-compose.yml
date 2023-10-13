@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: catalog_db
+    ports:
+      - "3306:3306"
+  flask-app:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql

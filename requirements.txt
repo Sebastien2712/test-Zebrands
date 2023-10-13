@@ -1,0 +1,10 @@
+Flask-RESTful 
+flask-restful-swagger
+Flask-Testing
+sqlalchemy
+Flask
+Flask-Login
+boto3
+Flask-SQLAlchemy
+Flask-Mysql
+
